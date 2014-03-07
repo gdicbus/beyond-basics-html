@@ -386,7 +386,7 @@ vertical-align: baseline;
         <ul>
           <li>CSS that overrides some browser defaults to make styles consistent across browsers.</li>
           <li>Keeps useful browser defaults.</li>
-          <li>Fixes some bugs in different browserssni.</li>
+          <li>Fixes some bugs in different browsers.</li>
           <li>Created by two developers and available <a href="http://necolas.github.io/normalize.css/">online</a>.</li>
         </ul>
         <br /><br />
@@ -433,7 +433,7 @@ vertical-align: baseline;
       <!-- Let's Develop It -->
       <section>
         <h3>Let's Develop It</h3>
-        <p class="blue">Getting our feet wet</p>
+        <p class="yellow">Getting our feet wet</p>
         <ul>
           <li>Download the practice files.</li>
           <li>Look through index.html in the browser and Sublime Text.</li>
@@ -475,7 +475,7 @@ vertical-align: baseline;
         <br /><br />
         <p class="left-align">Demo: <a href="http://www.google.com/webfonts">Goole Web Fonts</a></p>
         <p class="left-align">Example of a link provided by Google Web Fonts:</p>
-<pre><code class="html">&lt;link href="http://fonts.googleapis.com/css?family=Audiowide|Quicksand:300,400,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+<pre style="width:100%"><code class="html">&lt;link href="http://fonts.googleapis.com/css?family=Audiowide|Quicksand:300,400,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
 </code></pre>
       </section>
 
@@ -483,7 +483,7 @@ vertical-align: baseline;
         <h3>Fonts: @font-face</h3>
         <p class="left-align">Download fonts and add them to the local site files.</p>
         <p class="left-align">To use the fonts, use <span class="yellow">@font-face</span> at the very top of your CSS file:</p>
-<pre><code class="html">@font-face {
+<pre style="width:100%"><code class="html">@font-face {
   font-family: 'EntypoRegular';
   src: url('font/Entypo-webfont.eot');
   src: url('font/Entypo-webfont.eot?#iefix') format('embedded-opentype'),
@@ -517,7 +517,7 @@ vertical-align: baseline;
       <!-- Let's Develop It-->
       <section>
         <h3>Let's Develop It</h3>
-        <p class="blue">Use your new-found knowledge!</p>
+        <p class="yellow">Use your new-found knowledge!</p>
         <ul>
           <li>Update the links in the header and footer to jump to the corresponding section.</li>
           <li>Update the fonts on the site. The completed example uses:
@@ -534,196 +534,118 @@ vertical-align: baseline;
       <!-- Intro to HTML 5-->
       <section>
         <h3>HTML 5: What is it?</h3>
-        <p>Formally, HTML5 is the <a href="http://www.w3.org/TR/html5/" target="_blank">W3C’s specification</a> for the next version of HTML.</p>
-        <p>Informally, people use "HTML5" to refer to a whole set of new web standards and abilities:
-        <ul class >
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-        </ul>
+        <img style="float:right" src="images/html5.svg" height="350" alt="HTML5 Logo" />
+        <div class="left-align" style="width:70%; float:left">
+          <ul>
+            <li>The most recent version of HTML.</li>
+            <li>HTML5 specification history:
+              <ul>
+                <li>2004 - started work</li>
+                <li>2008 - first public working draft</li>
+                <li>2011 - last call</li>
+                <li>2012 - working draft</li>
+                <li>2014 - planned for stable recommendation</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <!-- Specifications-->
+      <!-- Browser compatibility-->
       <section>
-        <h2>HTML5 Specifications</h2>
-        <ul>
-          <li>2004 - started work</li>
-          <li>2008 - first public working draft</li>
-          <li>2011 - last call</li>
-          <li>2012 - working draft</li>
-          <li>2014 - planned for stable recommendation</li>
-        </ul>
+        <h3>Browser Compatibility</h3>
+        <div class="left-align">
+          <ul>
+            <li>Browser compatibility with HTML5 elements still varies from browser to browser.</li>
+            <li>Consider your audience and test your website in multiple browsers.</li>
+            <li>Tools:
+              <ul>
+                <li><a href="http://html5readiness.com/" target="_blank">HTML5 &amp; CSS3 Readiness</a></li>
+                <li><a href="http://caniuse.com/" target="_blank">Can I Use?</a></li>
+                <li><a href="http://html5please.com/" target="_blank">HTML5 Please</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
-
-        <!-- Browser compatibility-->
-        <section>
-          <section>
-            <h2>What about the browsers?</h2>
-            <ul>
-              <li class="chrome">Chrome</li>
-              <li class="firefox">Firefox</li>
-              <li class="ie">Internet Explorer</li>
-              <li class="webkit">Safari</li>
-              <li class="opera">Opera</li>
-            </ul>
-          </section>
-          <section>
-            <h2>HTML5 &amp; CSS3 Readiness</h2>
-            <a href="http://html5readiness.com/" target="_blank">HTML5 &amp; CSS3 Readiness</a><br/>
-            <img src="images/screenshots/html5-css3-readiness.png" alt=""/>
-          </section>
-          <section>
-            <h2>Can I Use?</h2>
-            <a href="http://caniuse.com/" target="_blank">Can I Use?</a><br/>
-            <img src="images/screenshots/caniuse-border-radius.png" alt=""/>
-          </section>
-          <section>
-            <h2>HTML5 Please</h2>
-            <a href="http://html5please.com/" target="_blank">HTML5 Please</a><br/>
-            <img src="images/screenshots/html5-please.png" alt=""/>
-          </section>
-        </section>
 
         <!-- Resources-->
         <section>
-          <section>
-            <h2>Helpful Resources</h2>
-          </section>
-          <section>
-            <img src="images/W3C_Icon.svg" alt="">
-            <p>
-              <a href="http://dev.w3.org/html5/spec/single-page.html" target="_blank">W3C HTML5 specs</a>
-            </p>
-          </section>
-          <section>
-            <img src="images/html5rocks.png" alt=""/>
-            <p>
-              <a href="http://www.html5rocks.com" target="_blank">http://www.html5rocks.com</a>
-            </p>
-          </section>
-          <section>
-            <img src="images/Mozilla-Developer-Network.png" alt=""/>
-            <p>
-              <a href="https://developer.mozilla.org" target="_blank">https://developer.mozilla.org</a>
-            </p>
-          </section>
-          <section>
-            <img src="images/html5doctor.png" alt=""/>
-            <p>
-              <a href="http://html5doctor.com" target="_blank">http://html5doctor.com</a>
-            </p>
-          </section>
+          <h3>HTML5: Helpful Resources</h3>
+          <ul>
+            <li><a href="http://dev.w3.org/html5/spec/single-page.html" target="_blank">W3C HTML5 specs</a></li>
+            <li><a href="http://www.html5rocks.com" target="_blank">http://www.html5rocks.com</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank">https://developer.mozilla.org</a></li>
+            <li><a href="http://html5doctor.com" target="_blank">http://html5doctor.com</a></li>
+          </ul>
         </section>
 
         <!-- What does it mean?-->
         <section>
-          <section>
-            <h3>So what's so cool about it?</h3>
-            <img src="images/html5.svg" style="height:75%" alt=""/>
-            <p>Too much to cover in our time together</p>
-            <p>But here are some highlights:</p>
-          </section>
-          <section>
-            <h2>Marks some old things obsolete</h2>
-            <h4>Examples</h4>
+          <h3>The Benefits of HTML5</h3>
             <ul>
-              <li>Deprecated items (e.g. frame, frameset, noframes)</li>
-              <li>Presentational elements and attributes replaced by CSS (e.g.
-               font, big, center)</li>
+              <li>Marks some old things obsolete
+                <ul>
+                  <li>Deprecated items (e.g. frame, frameset, noframes)</li>
+                  <li>Presentational elements and attributes replaced by CSS (e.g. font, big, center)</li>
+                  <li><a href="http://dev.w3.org/html5/spec/single-page.html#obsolete">reference</a></li>
+                </ul>
+              </li>
+              <li>Gives some old elements semantic meaning and separates them from presentation (e.g. b, i, strong, em)</li>
             </ul>
-            <a href="http://dev.w3.org/html5/spec/single-page.html#obsolete">reference</a>
-          </section>
-          <section>
-            <h2>Redefines a few things</h2>
-            <p>Gives some old elements semantic meaning and separates them from presentation (e.g. b, i, strong, em)</p>
-          </section>
-          <section>
-            <h2>Adds a bunch of new features</h2>
-            <ul class="html5-features">
-              <li>
-                <span>semantics</span>
-                <img src="images/html5-logo/html5_semantics.svg" alt=""/>
-              </li>
-              <li>
-                <span>offline &amp; storage</span>
-                <img src="images/html5-logo/html5_offline_storage.svg" alt=""/>
-              </li>
-              <li>
-                <span>device access</span>
-                <img src="images/html5-logo/html5_device_access.svg" alt=""/>
-              </li>
-              <li>
-                <span>connectivity</span>
-                <img src="images/html5-logo/html5_connectivity.svg" alt=""/>
-              </li>
-              <li>
-                <span>multimedia</span>
-                <img src="images/html5-logo/html5_multimedia.svg" alt=""/>
-              </li>
-              <li>
-                <span>3D &amp; graphics</span>
-                <img src="images/html5-logo/html5_effects_3d.svg" alt=""/>
-              </li>
-              <li>
-                <span>performance</span>
-                <img src="images/html5-logo/html5_perfintegration.svg" alt=""/>
-              </li>
-              <li>
-                <span>presentation</span>
-                <img src="images/html5-logo/html5_css3_styling.svg" alt=""/>
-              </li>
-            </ul>
-          </section>
+        </section>
+
+        <section>
+          <h3>Benefits of HTML5: New Features</h3>
+          <ul>
+            <li>Simpler and more semantic</li>
+            <li>Features for offline web applications and storage</li>
+            <li>Device access (e.g. file access for drag and drop)</li>
+            <li>Connectivity (faster communication between client and server)</li>
+            <li>Multimedia (video, audio elements)</li>
+            <li>3D and graphics (e.g. canvas)</li>
+            <li>Performance</li>
+          </ul>
         </section>
 
         <!-- DOCTYPE -->
         <section>
-          <section>
-            <h2>HTML5 Doctype</h2>
-            <pre><code class="xml">
-  &lt;!DOCTYPE html&gt;
-            </code></pre>
-            <p>
-              Minimum information required to ensure that a browser renders using
-              standards mode
-            </p>
-          </section>
-          <section>
-            <h2>Old Doctypes</h2>
-            <pre><code class="xml">
-  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-  "http://www.w3.org/TR/html4/strict.dtd"&gt;
-
-  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
-            </code></pre>
-          </section>
+          <h3>HTML5 Doctype</h3>
+          <p class="left-align">Minimum information required to ensure that a browser renders using standards mode.</p>
+          <pre><code class="html">&lt;!DOCTYPE html&gt;</code></pre>
+          <p class="left-align">Old Doctypes:</p>
+          <pre><code class="html">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd"&gt;</code></pre>
+          <pre><code class="html">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</code></pre>
         </section>
-
-        <!-- Semantics -->
+        
+        <!-- Semantic -->
         <section>
-          <h2>
-            <img src="images/html5-logo/html5_semantics.svg" height="50" alt="">
-            Semantic HTML
-          </h2>
+          <h3>Semantic HTML</h3>
           <blockquote cite="http://en.wikipedia.org/wiki/Semantic_HTML">The use of HTML markup to reinforce the semantics, or meaning, of the information in webpages rather than merely to define its presentation (look).</blockquote>
           <a href="http://en.wikipedia.org/wiki/Semantic_HTML">-Wikipedia</a>
         </section>
+        
         <section>
-          <h2>
-            <img src="images/html5-logo/html5_semantics.svg" height="50" alt="">
-            Semantics
-          </h2>
-          <p>Give meaning to structure</p>
+          <h3>Semantic HTML</h3>
+          <ul>
+            <li>HTML5 adds more meaningful HTML tags.</li>
+            <li>Easier to understand code for humans, machines, and screen readers.</li>
+            <li>Improves accessibility, searchability, internationaliation, and interoperability.</li>
+            <li>Adds more meaning to the structure (HTML) of your page.</li>
+            <li>Presentation unaffected.</li>
+          </ul>
         </section>
+
         <section>
-          <h2>Not Semantic</h2>
+          <h3>Semantic HTML: Example</h3>
+          <p class="left-align">Not semantic:</p>
           <pre><code>&lt;div id="header"&gt;&lt;/div&gt;</code></pre>
           <pre><code>&lt;div class="nav"&gt;&lt;/div&gt;</code></pre>
           <pre><code>&lt;div id="footer"&gt;&lt;/div&gt;</code></pre>
-        </section>
-        <section>
-          <h2>Semantic</h2>
+
+          <p class="left-align">Semantic:</p>
           <pre><code>&lt;header&gt;&lt;/header&gt;</code></pre>
           <pre><code>&lt;nav&gt;&lt;/nav&gt;</code></pre>
           <pre><code>&lt;footer&gt;&lt;/footer&gt;</code></pre>
@@ -731,75 +653,79 @@ vertical-align: baseline;
 
         <!-- New Elements -->
         <section>
-          <section>
-            <h2>New Structural Elements</h2>
-          </section>
-          <section>
-            <h2>&lt;section&gt;</h2>
+          <h3>HTML5: Structural Elements</h3>
+          <br />
+          <div class="left-align">
+            <h4>&lt;header&gt;</h4>
             <ul>
-              <li>Group together thematically related content</li>
-              <li>Similar to prior use of the div, but div has no semantic meaning</li>
+              <li>Container for a group of introductory or navigational aids.</li>
+              <li>Document can have multiple header elements.</li>
+              <li>E.g. One for the page, one for each section.</li>
             </ul>
-          </section>
-          <section>
-            <h2>&lt;header&gt;</h2>
+            <br /><br />
+            <h4>&lt;footer&gt;</h4>
             <ul>
-              <li>Container for a group of introductory or navigational aids</li>
-              <li>Document can have multiple header elements</li>
-              <li>E.g. One for the page, one for each section</li>
-            </ul>
-          </section>
-          <section>
-            <h2>&lt;footer&gt;</h2>
-            <ul>
-              <li>Contains information about its containing element</li>
+              <li>Contains information about its containing element.</li>
               <li>E.g. who wrote it, copyright, links to related content, etc.</li>
-              <li>Document can have multiple footer elements</li>
-              <li>E.g. One for the page, one for each section</li>
+              <li>Document can have multiple footer elements.</li>
+              <li>E.g. One for the page, one for each section.</li>
             </ul>
-          </section>
-          <section>
-            <h2>&lt;aside&gt;</h2>
+          </div>
+        </section>
+            
+        <section>
+          <h3>HTML5: Structural Elements</h3>
+          <br />
+          <div class="left-align">
+            <h4>&lt;section&gt;</h4>
             <ul>
-              <li>Tangentially related content</li>
-              <li>E.g. sidebar, pull quotes</li>
+              <li>Group together thematically related content.</li>
+              <li>Similar to prior use of the div, but div has no semantic meaning.</li>
             </ul>
-          </section>
-          <section>
-            <h2>&lt;nav&gt;</h2>
+            <br /><br />
+            <h4>&lt;aside&gt;</h4>
             <ul>
-              <li>Contains major navigational information</li>
-              <li>Usually a list of links</li>
-              <li>Often lives in the header</li>
-              <li>E.g. site navigation</li>
+              <li>Tangentially related content.</li>
+              <li>E.g. sidebar, pull quotes.</li>
             </ul>
-          </section>
-          <section>
-            <h2>&lt;article&gt;</h2>
+          </div>  
+        </section>
+
+        <section>
+          <h3>HTML5: Structural Elements</h3>
+          <br />
+          <div class="left-align">
+            <h4>&lt;nav&gt;</h4>
+            <ul>
+              <li>Contains major navigational information.</li>
+              <li>Usually a list of links.</li>
+              <li>Often lives in the header.</li>
+              <li>E.g. site navigation.</li>
+            </ul>    
+            <br /><br />
+            <h4>&lt;article&gt;</h4>
             <ul>
               <li>Self-contained related content</li>
               <li>E.g. blog posts, news stories, comments, reviews, forum posts</li>
             </ul>
-          </section>
+          </div>
         </section>
 
         <!-- HTML5 doctor -->
         <section>
-          <p>
-            <a href="http://html5doctor.com" target="_blank"><img src="images/html5doctor.png" alt=""/></a>
-          </p>
-          <p>
-            <a href="http://html5doctor.com/element-index/" target="_blank">element index</a>
-          </p>
+          <h3>HTML5 Element Reference</h3>
+          <p><a href="http://html5doctor.com" target="_blank"><img src="images/html5doctor.png" alt=""/></a></p>
+          <p><a href="http://html5doctor.com/element-index/" target="_blank">HTML Element Index</a></p>
           <p>
             <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf" target="_blank">
-              sectioning flowchart</a>
+            HTML5 Element Flowchart</a>
           </p>
         </section>
 
         <!-- More semantics -->
         <section>
-          <h2>Not Semantic</h2>
+          <h3>Semantic HTML: Example</h3>
+          <p class="left-align">Lots of divs (aka "divitis") lead to unsemantic code:</p>
 <pre class="massive"><code style="font-size:85%;">&lt;body&gt;
     &lt;div id="header"&gt;
       &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
@@ -820,28 +746,8 @@ vertical-align: baseline;
         </section>
 
         <section>
-          <h2>A lot of Divs</h2>
-<pre class="massive"><code style="font-size:85%;">&lt;body&gt;
-  &lt;div id="header"&gt;
-    &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
-    &lt;div id="nav"&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href="foo"&gt;foo&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="bar"&gt;bar&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div id="main"&gt;
-    &lt;div class="article"&gt;foo&lt;/div&gt;
-    &lt;div class="article"&gt;bar&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div id="footer"&gt;Hi, I'm a footer!&lt;/div&gt;
-&lt;/body&gt;</code></pre>
-          <p>also known as div-itis</p>
-        </section>
-
-        <section>
-          <h2>Semantic</h2>
+          <h3>Semantic HTML: Example</h3>
+          <p class="left-align">More semantic with HTML5 elements:</p>
           <pre class="massive"><code style="font-size:85%;">&lt;body&gt;
   &lt;header&gt;
     &lt;h1&gt;Hi, I'm a header!&lt;/h1&gt;
@@ -861,44 +767,37 @@ vertical-align: baseline;
         </section>
 
         <section>
-          <h2>Semantic Markup Enhances</h2>
-          <ul>
-            <li>Accessibility</li>
-            <li>Searchability</li>
-            <li>Internationalization</li>
-            <li>Interoperability</li>
-          </ul>
-          <p>It also helps treat the plague of div-itis!</p>
+          <h3>What about old browsers?</h3>
+          <a href="http://caniuse.com/#feat=html5semantic" target="_blank">
+            <img src="images/screenshots/caniuse-semantics.png" alt="" />
+          </a>
         </section>
 
         <section>
-          <section>
-            <h2>What about old browsers?</h2>
-            <a href="http://caniuse.com/#feat=html5semantic" target="_blank">
-              <img src="images/screenshots/caniuse-semantics.png" alt=""/>
-            </a>
-          </section>
-
-          <section>
-            <h2>HTML5Shiv</h2>
-            <a href="http://code.google.com/p/html5shiv/">HTML5Shiv</a>
-            <p>HTML5 IE enabling script</p>
-            <pre><code>&lt;!--[if lt IE 9]&gt;
+          <h3>HTML5Shiv</h3>
+          <div class="left-align">
+            <ul>
+              <li>Script that enables HTML5 elements in IE.</li>
+              <li>A "<span class="yellow">polyfill</span>": "a browser fallback, made in Javascript, that allows functionality you expect to work in modern browsers to work in older browsers."<a href="http://stackoverflow.com/questions/7087331/what-is-the-meaning-of-polyfills-in-html5">(Stack Overflow)</a></li>
+              <li>Download the script: <a href="http://code.google.com/p/html5shiv/">HTML5Shiv</a></li>
+              <li>Add the script to your site files.</li>
+              <li>Link to the script file in your HTML &lt;head>:</li>
+            </ul>
+          </div>
+          <pre><code>&lt;!--[if lt IE 9]&gt;
 &lt;script src="html5shiv.js"&gt;&lt;/script&gt;
 &lt;![endif]--&gt;</code></pre>
-            <blockquote>polyfill (n): a JavaScript shim that replicates the standard API for older browsers</blockquote>
-          </section>
         </section>
 
         <!-- Let's Develop It-->
         <section>
           <h2>Let's Develop It</h2>
-          <p class="blue">Modify the site to use semantic HTML</p>
+          <p class="yellow">Modify the site to use semantic HTML</p>
           <ul>
-            <li>Change one small thing at a time</li>
-            <li>Remember to modify the CSS to match the HTML</li>
-            <li>You have 10-15 minutes to get started</li>
-            <li>You won't be able to change everything - if we have time, you can continue at the end of the workshop</li>
+            <li>Change one pair of elements at a time.</li>
+            <li>Remember to modify the CSS to match the HTML.</li>
+            <li>You have 10-15 minutes to get started.</li>
+            <li>You won't be able to change everything - if we have time, you can continue at the end of the workshop.</li>
           </ul>
         </section>
 
