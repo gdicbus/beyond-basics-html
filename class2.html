@@ -39,225 +39,257 @@
 
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
-    <!-- Opening slide -->
-    <section>
-      <img src="images/gdi_logo_badge.png" alt="">
-      <h3>Beyond the Basics of HTML/CSS</h3>
-      <h4>Class 2</h4>
-    </section>
+
+    <!-- Pre-class slide -->
+      <section>
+        <h2>Welcome!</h2>
+        <p>Wifi Network: </p>
+        <p>Wifi Password: </p>
+        <hr />
+        <div class="left-align">
+          <p class="green">If you have not already done so:</p>
+          <ul>
+            <li>Download Sublime Text 2: <a href="http://www.sublimetext.com/2">http://www.sublimetext.com/2</a></li>
+            <li>Install either Chrome or Firefox and Firebug</li>
+            <li>Open the class slides: <a href="http://gdicbus.github.io/beyond-basics-html">http://gdicbus.github.io/beyond-basics-html</a></li>
+          </ul>
+          <br /><br />
+          <small>Ask a TA if you need help with any of the above!</small>
+        </div>
+      </section>
+
+      <!-- Opening slide -->
+      <section>
+        <img src="images/gdi_logo_badge.png" alt="">
+        <h3>Beyond the Basics of HTML/CSS</h3>
+        <h4>Class 2</h4>
+      </section>
 
       <!-- Welcome-->
       <section>
         <h3>Welcome!</h3>
         <div class="left-align">
           <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class="green">Some "rules"</p>
+        <p class="green">Some "rules":</p>
           <ul>
             <li>We are here for you!</li>
             <li>Every question is important</li>
-            <li>Help each other</li>
+            <li>Working together is awesome</li>
             <li>Have fun</li>
           </ul>
+          <br /><br />
+          <p>Thank you <img class="no-styles" src="images/sponsors/Neo_GreenLogo_small.png" /> for hosting!</p>
         </div>
-      </section>
-      <section>
-        <img src="images/css3.svg" alt=""/>
-      </section>
-      <section>
-        <h2>CSS3 Background</h2>
-        <ul>
-          <li>Series of modules that are designed to be implemented separately and independently from each other</li>
-          <li>Enhances display and interactions</li>
-        </ul>
       </section>
 
       <section>
-        <h2>New Selectors</h2>
+        <h3>CSS3: The Latest Version of CSS</h3>
+        <img src="images/css3.svg" alt="CSS3 Logo"/>
+      </section>
+      
+      <section>
+        <h3>CSS3 Background</h3>
+        <div class="left-align">
+          <ul>
+            <li>The latest CSS standard.</li>
+            <li>Backwards compatible: includes the old CSS.</li>
+            <li>Includes new CSS properties and selectors.</li>
+          </ul>
+        </div>
       </section>
 
       <!-- Attribute Selectors-->
       <section>
-        <section>
-          <h2>Attribute Selectors</h2>
-          <p>Not just classes and ids any more!</p>
-          <ul>
-            <li class="fragment"><strong>E[foo^="bar"]</strong> <br/>an element whose "foo" attribute value begins exactly with the string "bar"</li>
-            <li class="fragment"><strong>E[foo$="bar"]</strong> <br/>an element whose "foo" attribute value ends exactly with the string "bar"</li>
-            <li class="fragment"><strong>E[foo*="bar"]</strong> <br/>an element whose "foo" attribute value contains the substring "bar"</li>
-          </ul>
-        </section>
-        <section class="attribute-selectors">
-          <h2>Attribute Selectors</h2>
-          <pre><code>div[foo^="bar"] {
-  color: red;
-}
-div[foo$="bar"] {
+        <h3>Advanced CSS: Attribute Selectors</h3>
+        <p>Not just classes and ids anymore!</p>
+        <p class="left-align">Affect every HTML element on the page:</p>
+<pre><code> * {
+  margin: 0;
+  padding: 0;
+}</code></pre>
+      </section>
+
+      <section>
+        <h3>Advanced CSS: Attribute Selectors</h3>
+        <p class="left-align">Target the first child:</p>
+<pre><code>ul li:first-child {
   background-color: red;
-}
-div[foo*="bar"] {
-  border: solid 5px red;
 }</code></pre>
-          <article>
-            <div foo="barley">foo="barley"</div>
-            <div foo="lumbar">foo="lumbar"</div>
-            <div foo="embark">foo="embark"</div>
-          </article>
-        </section>
-        <section class="attribute-selectors">
-          <h2>Attribute Selectors</h2>
-          <p>People don't actually use foo do they?</p>
-          <pre><code>a[href^="http://"] {
-  color: red;
-}
-img[src$=".jpg"] {
-  border: solid 5px red;
-}</code></pre>
-          <article>
-            <a href="http://www.girldevelopit.com" target="_blank">http://www.girldevelopit.com</a>
-            <img src="images/dinosaur.jpg" title="dinosaur" alt="" style="float:right;"/>
-          </article>
-        </section>
+        <p class="left-align">The HTML:</p>
+<pre><code>&lt;ul>
+  &lt;li>First Child&lt;/li>
+  &lt;li>Second Child&lt;/li>
+  &lt;li>Third Child&lt;/li>
+&lt;/ul>
+</code></pre>
+        <div class="left-align">
+          <p>Webpage output:</p>
+          <ul>
+            <li style="background-color:#aa0000">First Child</li>
+            <li>Second Child</li>
+            <li>Third Child</li>
+          </ul>
+        </div>
       </section>
 
-      <!-- Nth child-->
       <section>
-        <section>
-          <h2>:nth-child pseudo-class selector</h2>
-          <p class="yellow fragment" style="font-size: 1.2em">Say WHAT???</p>
-          <p class="fragment">Ever want to style a table so that every other row was a different color?</p>
-          <p class="fragment">Or have a gallery of images so that each row is 3 images wide?</p>
-          <p class="fragment">:nth-child pseudo-class is used to style every 2nd, 3rd, 4th, or "nth" element</p>
-        </section>
-        <section>
-          <h2>:nth-child pseudo-class selector</h2>
-          <p>matches an element that has position <em>an+b</em></p>
-          <pre><code class="css">
-element:nth-child(an + b) { style properties }
-          </code></pre>
-          <h4>some examples</h4>
+        <h3>Advanced CSS: Attribute Selectors</h3>
+        <p class="left-align">Target the last child:</p>
+<pre><code>ul li:last-child {
+  background-color: red;
+}</code></pre>
+        <p class="left-align">The HTML:</p>
+<pre><code>&lt;ul>
+  &lt;li>First Child&lt;/li>
+  &lt;li>Second Child&lt;/li>
+  &lt;li>Third Child&lt;/li>
+&lt;/ul>
+</code></pre>
+        <div class="left-align">
+          <p>Webpage output:</p>
           <ul>
-            <li><strong>3</strong> - selects the third element</li>
-            <li><strong>4n</strong> - selects every fourth element</li>
-            <li><strong>even</strong> - selects even elements</li>
-            <li><strong>odd</strong> - selects odd elements</li>
+            <li>First Child</li>
+            <li>Second Child</li>
+            <li style="background-color:#aa0000">Third Child</li>
           </ul>
-        </section>
-        <section class="nth-child-table">
-          <h2>:nth-child</h2>
-          <pre><code>tbody tr:nth-child(an + b) { backround-color: red; }</code></pre>
-          <p>
-            <input type="text" id="nth-child-value" value="" />
-            <input type="button" value="change"/>
-          </p>
-          <table>
-            <thead>
-              <tr>
-                <th>n</th>
-                <th>2n+1</th><th>4n+1</th><th>4n+4</th>
-                <th>4n  </th><th>5n-2</th><th>-n+3</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>0 </th>
-                <td>1 </td><td>1 </td><td>4 </td>
-                <td>- </td><td>- </td><td>3 </td>
-              </tr>
-              <tr>
-                <th>1 </th>
-                <td>3 </td><td>5 </td><td>8 </td>
-                <td>4</td><td>3</td><td>2</td>
-              </tr>
-              <tr>
-                <th>2 </th>
-                <td>5 </td><td>9 </td><td>12</td>
-                <td>8</td><td>8</td><td>1</td>
-              </tr>
-              <tr>
-                <th>3 </th>
-                <td>7 </td><td>13</td><td>16</td>
-                <td>12</td><td>13</td><td>- </td>
-              </tr>
-              <tr>
-                <th>4 </th>
-                <td>9 </td><td>17</td><td>20</td>
-                <td>16</td><td>18</td><td>- </td>
-              </tr>
-              <tr>
-                <th>5 </th>
-                <td>11</td><td>21</td><td>24</td>
-                <td>20</td><td>23</td><td>- </td>
-              </tr>
-            </tbody>
-          </table>
-          <a href="http://css-tricks.com/how-nth-child-works/" target="_blank">reference</a>
-        </section>
+        </div>
       </section>
 
-      <!-- Pseudo form selectors-->
       <section>
-        <section>
-          <h2>Some other pseudo-class Selectors</h2>
-          <ul>
-            <li class="fragment">
-              <strong>E:last-child</strong><br/> an element, last child of its parent
-            </li>
-            <li class="fragment">
-              <strong>E:only-child</strong><br/> an element, only child of its parent
-            </li>
-            <li class="fragment">
-              <strong>E:empty</strong><br/> an element that has no children (including text nodes)
-            </li>
-            <li class="fragment">
-              <strong>E:not</strong><br/> an element that does not match simple selector
-            </li>
-          </ul>
-        </section>
-        <section class="pseudo-enabled">
-          <h2>:enabled &amp; :disabled</h2>
-          <p>You can style form elements that are disabled and enabled</p>
-          <pre><code>
-input:enabled { background-color: green; }
+        <h3>Advanced CSS: Attribute Selectors</h3>
+        <p class="left-align">Use the :nth-child pseudo-selector to target every nth element.</p>
+        <p class="left-align">Target every fourth table row (&lt;tr>):</p>
+<pre><code>tr:nth-child(4n) { 
+  backround-color: red; 
+}</code></pre>
+        <p class="left-align">Targets only the third table row:</p>
+<pre><code>tr:nth-child(3) { 
+  backround-color: red; 
+}</code></pre>
+        <p class="left-align">Targets all the odd table rows:</p>
+<pre><code>tr:nth-child(odd) { 
+  backround-color: red; 
+}</code></pre>
+      </section>
 
-input:disabled { background-color: grey; }
-          </code></pre>
-          <div class="example">Enabled: <input type="text"/></div>
-          <div class="example">Disabled: <input type="text" disabled/></div>
-        </section>
-        <section class="pseudo-checked">
-          <h2>:checked</h2>
-          <p>You can style checkboxes and radio buttons when they are selected</p>
-          <pre><code>
+      <section class="nth-child-table">
+        <h3>:nth-child</h3>
+        <pre><code>tbody tr:nth-child(an + b) { 
+    backround-color: red; 
+}</code></pre>
+        <br />
+        <div class="left-align">
+        <p>
+          <input type="text" id="nth-child-value" value="" placeholder="Enter an nth-child value" />
+          <input type="button" value="change"/>
+        </p>
+        <table style="background-color: white; color:#000">
+          <thead>
+            <tr style="background-color:#92BB44">
+              <th></th>
+              <th>Name</th><th>Born</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background-color: #fff">
+              <th style="background-color:#92BB44">1 </th>
+              <td>Ada Lovelace</td><td>1815</td>
+            </tr>
+            <tr>
+              <th style="background-color:#92BB44">2 </th>
+              <td>Grace Hopper</td><td>1906</td>
+            </tr>
+            <tr>
+              <th style="background-color:#92BB44">3 </th>
+              <td>Frances Allen</td><td>1932</td>
+            </tr>
+            <tr>
+              <th style="background-color:#92BB44">4 </th>
+              <td>Barbara Liskov</td><td>1939</td>
+            </tr>
+            <tr>
+              <th style="background-color:#92BB44">5 </th>
+              <td>Anita Borg</td><td>1949</td>
+            </tr>
+            <tr>
+              <th style="background-color:#92BB44">6 </th>
+              <td>Maria Klawe</td><td>1951</td>
+            </tr>
+          </tbody>
+        </table>
+        <small>Source: <a href="http://css-tricks.com/how-nth-child-works/" target="_blank">CSS Tricks</a></small>
+        </div>
+      </section>
+
+      <section>
+        <h3>:nth-child: Practical Applications</h3>
+        <p>Create a table with every other row a different color:</p>
+        <img src="images/screenshots/striped-table.png" alt="Table with different colored rows." />
+        <small>Source: <a href="http://csswizardry.com/2010/08/zebra-striping-rows-and-columns/">CSSWizardry</a></small>
+      </section>
+
+      <section>
+        <h3>:nth-child: Practical Applications</h3>
+        <p>Create a gallery of images that is 3 images wide:</p>
+        <img src="images/screenshots/gallery-women-tech.png" alt="Women in technology image gallery" />
+      </section>
+
+      <section>
+        <h3>Attribute Selectors Resources</h3>
+        <div class="left-align">
+          <p>Many other CSS selectors exist.</p>
+          <p>Don't worry about memorizing them. Use your references!</p>
+          <ul>
+            <li><a href="http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048">Round-up of 30 useful CSS selectors</a></li>
+            <li><a href="http://www.w3schools.com/cssref/css_selectors.asp">W3 Schools CSS Selector Reference</a></li>
+          </ul>
+        </div>
+      </section>
+
+    <!-- Pseudo form selectors-->
+    <section class="pseudo-enabled">
+      <h2>:enabled &amp; :disabled</h2>
+      <p>You can style form elements that are disabled and enabled</p>
+      <pre><code>input:enabled { 
+  background-color: green; 
+}
+
+input:disabled { 
+  background-color: grey; 
+}</code></pre>
+        <div class="example">Enabled: <input type="text"/></div>
+        <div class="example">Disabled: <input type="text" disabled/></div>
+      </section>
+      <section class="pseudo-checked">
+        <h2>:checked</h2>
+        <p>You can style checkboxes and radio buttons when they are selected</p>
+        <pre><code>
 input:checked + label {
-  color: red;
+color: red;
 }
-          </code></pre>
-          <p>
-            <input type="checkbox" id="checkbox1">
-            <label for="checkbox1">checkbox</label>
-          </p>
-          <p>
-            <input type="radio" name="radio" id="radio1" />
-            <label for="radio1">radio</label>
+        </code></pre>
+        <p>
+          <input type="checkbox" id="checkbox1">
+          <label for="checkbox1">checkbox</label>
+        </p>
+        <p>
+          <input type="radio" name="radio" id="radio1" />
+          <label for="radio1">radio</label>
 
-            <input type="radio" name="radio" id="radio2" />
-            <label for="radio2">radio</label>
+          <input type="radio" name="radio" id="radio2" />
+          <label for="radio2">radio</label>
 
-            <input type="radio" name="radio" id="radio3" />
-            <label for="radio3">radio</label>
-          </p>
-        </section>
+          <input type="radio" name="radio" id="radio3" />
+          <label for="radio3">radio</label>
+        </p>
       </section>
 
       <!-- Let's Develop It -->
       <section data-state="activity">
         <section>
           <h2>Let's Develop It!</h2>
-          <p>Enhance our Women in Computing web site to use HTML5 &amp; CSS3</p>
-        </section>
-        <section>
-          <h2>Use a pseudo-selector</h2>
-          <p>We need to clear every 4th famous woman</p>
+          <p>Enhance our Women in Computing web site:</p>
+          <p>We need to clear every 4th famous woman.</p>
           <p>Previously, this was done by manually adding a <strong>break</strong> class to every 4th element</p>
           <img src="images/screenshots/famous-break.png" alt=""/>
           <p>Replace this with an <strong>:nth-child</strong> selector</p>
@@ -265,16 +297,12 @@ input:checked + label {
         <section>
           <h2>Example solutions</h2>
           <p>Make the rows of women three long</p>
-          <pre><code>
-#famous article:nth-child(4n) {
+          <pre><code>#famous article:nth-child(4n) {
   clear: both;
-}
-          </code></pre>
-          <pre><code>
-#famous div:nth-child(4n) {
+}</code></pre>
+          <pre><code>#famous div:nth-child(4n) {
   clear: both;
-}
-          </code></pre>
+}</code></pre>
         </section>
       </section>
 
@@ -435,7 +463,7 @@ input:checked + label {
         <section>
           <h2>rgba colors &amp; opacity</h2>
           <article class="rgba-opacity">
-            <article class="fragment">
+            <article>
               <div class="example1 opacity">
                 background-color: rgb(255, 0, 0); opacity: 1;
               </div>
@@ -444,7 +472,7 @@ input:checked + label {
               </div>
             </article>
 
-            <article class="fragment">
+            <article>
               <div class="example2 opacity">
                 background-color: rgb(255, 0, 0); opacity: 0.8;
               </div>
@@ -453,7 +481,7 @@ input:checked + label {
               </div>
             </article>
 
-            <article class="fragment">
+            <article>
               <div class="example3 opacity">
                 background-color: rgb(255, 0, 0); opacity: 0.5;
               </div>
@@ -462,7 +490,7 @@ input:checked + label {
               </div>
             </article>
 
-            <article class="fragment">
+            <article>
               <div class="example4 opacity">
                 background-color: rgb(255, 0, 0); opacity: 0.2;
               </div>
@@ -471,7 +499,7 @@ input:checked + label {
               </div>
             </article>
 
-            <article class="fragment">
+            <article>
               <div class="example5 opacity">
                 background-color: rgb(255, 0, 0); opacity: 0;
               </div>
@@ -723,7 +751,7 @@ background-image: url('../images/html5-features.png'),
         <section>
           <h2>Transitions</h2>
           <p>Allow property changes in CSS values to occur smoothly over a specified duration</p>
-          <p class="fragment">Create some awesome effects without any JavaScript</p>
+          <p>Create some awesome effects without any JavaScript</p>
         </section>
         <section>
           <h2>Transition Triggers</h2>
